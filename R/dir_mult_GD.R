@@ -26,6 +26,11 @@
 #' \item{BIC}{Bayesian Information Criterion (BIC) value of the fitted model.}
 #'
 #'
+#'
+#' @importFrom Rfast Lgamma
+#' @importFrom stats nlminb
+#' 
+#' 
 #' @details Starting from the data given by \code{x} the Dirichlet-Multinomial mixture model is fitted
 #' and \code{k} clusters are obtained.
 #' The algorithm for the parameter estimation is the Gradiend Descend.
@@ -37,7 +42,7 @@
 #' For further details see the references.
 #'
 #' @references
-#' Anderlucci Laura, Viroli Cinzia (2020). "Mixtures of Dirichlet-Multinomial distributions for supervised and unsupervised classification of short text data". \emph{Advances in Data Analysis and Classification}. \doi{10.1007/s11634-020-00399-3}
+#' Anderlucci L, Viroli C (2020). "Mixtures of Dirichlet-Multinomial distributions for supervised and unsupervised classification of short text data." \emph{Advances in Data Analysis and Classification}, \bold{14}, 759-770. \doi{10.1007/s11634-020-00399-3}.
 #'
 #' @examples
 #' # Load the CNAE2 dataset

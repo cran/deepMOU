@@ -37,7 +37,7 @@
 #' For further details see the references.
 #'
 #' @references
-#' Viroli Cinzia, Anderlucci Laura (2020). "Deep mixtures of Unigrams for uncovering topics in textual data". \emph{Statistics and Computing}, forthcoming, 1-18.
+#' Viroli C, Anderlucci L (2020). "Deep mixtures of Unigrams for uncovering topics in textual data." \emph{Statistics and Computing}, pp. 1-18. \doi{10.1007/s11222-020-09989-9}.
 #'
 #' @examples
 #' # Load the CNAE2 dataset

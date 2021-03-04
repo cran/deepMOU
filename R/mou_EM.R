@@ -61,11 +61,14 @@ mou_EM = function (x, k, n_it = 100, eps = 1e-07, seed_choice = 1, init = NULL)
     out = skmeans(x, k, method = "pclust", control = list(maxiter = 20, nruns = 2, maxchains = 2))
     omega = abs(out$prototypes)
     omega = ifelse(omega == 0, 9.99988867182683e-321, omega)
+    pi_hat = rep(1/k, k)
   } else {
     for (i in 1:k) omega[, i] = colSums(x[init == i, ])
     omega = ifelse(omega == 0, 9.99988867182683e-321, omega)
+    pi_hat = table(init)
+    pi_hat = pi_hat/sum(pi_hat)
   }
-  pi_hat = rep(1/k, k)
+  
   likelihood = NULL
   f_x_z = matrix(0, numobs, k)
   f_z_x = matrix(0, numobs, k)
@@ -98,7 +101,7 @@ mou_EM = function (x, k, n_it = 100, eps = 1e-07, seed_choice = 1, init = NULL)
 
   clusters = apply(f_z_x, 1, which.max)
   output = list(x = x, k = k, numobs = numobs, p = p, likelihood = likelihood,
-                clusters = clusters, pi_hat = pi_hat, omega = t(omega),
+                clusters = clusters, pi_hat = pi_hat, Omega = t(omega),
                 f_z_x = f_z_x, AIC = AIC, BIC = BIC)
   class(output) = "deepMOU"
   invisible(output)

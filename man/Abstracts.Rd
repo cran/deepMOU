@@ -15,14 +15,12 @@ Dataset composed by titles and abstracts of articles published in 2015 in five s
 }
 \details{
 These are the titles and abstracts of all the articles published in 2015 by the following journals:
-\itemize{
-\item Journal of American Statistical Association (JASA)
-\item Journal of the Royal Statistical Society - Series B
-\item Annals of Statistics
-\item Biometrika
-\item Statistical Science
-}
-
+  - Journal of American Statistical Association (JASA)
+  - Journal of the Royal Statistical Society - Series B
+  - Annals of Statistics
+  - Biometrika
+  - Statistical Science
+  
 The dataset comprises 379 articles with a vocabulary of 606 words already
 pre-processed (stemmed, lemmatized, stopwords removal etc.); terms with entropy
 less than 0.3 were discarded (rule-of-thumb threshold).

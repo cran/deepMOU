@@ -58,5 +58,5 @@ deep_CNAE2 = deep_mou_gibbs(x = CNAE2, k = 2, g = 2, n_it = 5, burn_in = 2)
 deep_CNAE2$clusters
 }
 \references{
-Viroli Cinzia, Anderlucci Laura (2020). "Deep mixtures of Unigrams for uncovering topics in textual data". \emph{Statistics and Computing}, forthcoming, 1-18.
+Viroli C, Anderlucci L (2020). "Deep mixtures of Unigrams for uncovering topics in textual data." \emph{Statistics and Computing}, pp. 1-18. \doi{10.1007/s11222-020-09989-9}.
 }

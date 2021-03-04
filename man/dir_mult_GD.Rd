@@ -74,5 +74,5 @@ dir_CNAE2$clusters
 
 }
 \references{
-Anderlucci Laura, Viroli Cinzia (2020). "Mixtures of Dirichlet-Multinomial distributions for supervised and unsupervised classification of short text data". \emph{Advances in Data Analysis and Classification}. \doi{10.1007/s11634-020-00399-3}
+Anderlucci L, Viroli C (2020). "Mixtures of Dirichlet-Multinomial distributions for supervised and unsupervised classification of short text data." \emph{Advances in Data Analysis and Classification}, \bold{14}, 759-770. \doi{10.1007/s11634-020-00399-3}.
 }

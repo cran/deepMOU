@@ -44,6 +44,8 @@ calc2grad_b = function( x, Theta){
   return(out)
 }
 
+
+
 misc <-  function(classification, truth)
   {
 

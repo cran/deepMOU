@@ -37,7 +37,7 @@ Bi-dimensional representation (via Multi-Dimensional Scaling) of the clusters, w
 its size is proportional to the relative frequency of documents and color saturation reflects cluster cohesion.
 }
 \details{
-The default graphical representation of \code{mou_EM}, \code{dir_mult_GD} and \code{deep_mou_gibbs} is the bubble plot.
+The default graphical representation of \code{mou_EM}, \code{dir_mult_GD} and \code{deep_mou_gibbs} is the bubble plot. 
 Namely, a bi-dimensional representation (via Multi-Dimensional Scaling) of the clusters, each bubble corresponds to a cluster,
 its size is proportional to the relative frequency of documents and color saturation reflects cluster cohesion.
 }
